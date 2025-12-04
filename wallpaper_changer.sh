@@ -64,7 +64,7 @@ fi
 
 # Function to set a random wallpaper with a smooth transition
 set_wallpaper() {
-  mapfile -t WALLPAPERS < <(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
+  mapfile -t WALLPAPERS < <(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.gif" -o -iname "*.jpeg" -o -iname "*.png" \))
 
   if [ ${#WALLPAPERS[@]} -eq 0 ]; then
     echo "Error: No wallpapers found in $WALLPAPER_DIR"
